@@ -1,0 +1,30 @@
+<svg id="timebar_BG" data-name="timebar BG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="385" height="1415" viewBox="0 0 385 1415">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #f15a24;
+      }
+
+      .cls-4 {
+        fill: #c1451f;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" x="-53" y="57" width="491" height="1258"/>
+    </clipPath>
+  </defs>
+  <g class="cls-2">
+    <g>
+      <path class="cls-3" d="M325.5,201.5v984a131.5,131.5,0,1,1-263,0v-984a131.5,131.5,0,1,1,263,0Z"/>
+      <path class="cls-4" d="M280.5,201.5v984a131.52,131.52,0,0,1-109,129.58,131.52,131.52,0,0,1-109-129.58v-984a131.52,131.52,0,0,1,109-129.58,131.52,131.52,0,0,1,109,129.58Z"/>
+    </g>
+  </g>
+</svg>

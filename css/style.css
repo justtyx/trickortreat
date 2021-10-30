@@ -1,0 +1,1104 @@
+/*The nav bar*/
+* {
+    font-family: 'Garamond', serif;
+    color: #414141;
+}
+
+body {
+    background-color: #E9D9CB;
+}
+
+nav {
+    overflow: hidden;
+    margin: 0 2vw;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 0;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+li {
+    margin: 0.5vw 0;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 15vw;
+    background-color: #E9D9CB;
+    z-index: 1;
+    margin: 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 0.1vw 0;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ .nav_logo {
+        width: 5vw;
+        height: auto;
+    }
+
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    color: black;
+    font-size: 17px;
+    margin-left: 0.3vw;
+}
+
+.instructions_text {
+    font-family: 'Raleway';
+    color: dimgrey;
+    font-size: 40px;
+    position: absolute;
+    right: 21vw;
+    top: 11vw;
+    width: 35vw;
+    height: auto;
+}
+
+aside {
+    grid-column: 2/3;
+}
+
+.class {
+    flex-direction: column;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 16fr 9fr;
+    grid-column-gap: 2vw;
+}
+
+.icons {
+    width: 1vw;
+    ;
+    height: auto;
+    padding: 0;
+}
+
+footer {
+    margin-top: 0.2vw;
+    text-transform: uppercase;
+    margin: 0.2vw 1vw 0;
+}
+
+section {
+    overflow: hidden;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/*game screen*/
+
+#screen {
+    width: 80vw;
+    height: 45vw;
+    grid-column: 1/2;
+    position: relative;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+}
+
+#game_background {
+    position: relative;
+    background-image: url(../images/BG_2.svg);
+    background-size: 100%;
+    width: 80vw;
+    height: 100%;
+}
+
+#characters {
+    background-image: url(../images/characters.svg);
+    background-size: 100%;
+    width: 24vw;
+    height: 17.5vw;
+}
+
+.position {
+    position: absolute;
+    left: 28vw;
+    top: 25vw;
+}
+
+#candy_item_sprite {
+    background-image: url(../images/candy.svg);
+    background-size: 100%;
+    width: 6vw;
+    height: 9.2vw;
+}
+
+.position1 {
+    position: absolute;
+    left: 1.5vw;
+    top: -5vw;
+}
+
+#extra_point_candy_sprite {
+    background-image: url(../images/2point_candy.svg);
+    background-size: 100%;
+    width: 9.2vw;
+    height: 7.2vw;
+    transform: rotate(135deg)
+}
+
+.position2 {
+    position: absolute;
+    left: 13vw;
+    top: -3vw;
+}
+
+#heart_candy_sprite {
+    background-image: url(../images/heart_candy.svg);
+    background-size: 100%;
+    width: 9vw;
+    height: 9vw;
+}
+
+.position3 {
+    position: absolute;
+    left: 40vw;
+    top: -2vw;
+}
+
+#lollipop_sprite {
+    background-image: url(../images/lollipop.svg);
+    background-size: 100%;
+    width: 6.2vw;
+    height: 8.1vw;
+}
+
+.position4 {
+    position: absolute;
+    left: 63vw;
+    top: -2vw;
+}
+
+#apple_sprite {
+    background-image: url(../images/apple.svg);
+    background-size: 100%;
+    width: 6vw;
+    height: 6vw;
+    transform: rotate(-340deg)
+}
+
+.position5 {
+    position: absolute;
+    left: 7vw;
+    top: -1vw;
+}
+
+#lemon_sprite {
+    background-image: url(../images/lemon.svg);
+    background-size: 100%;
+    width: 6vw;
+    height: 6vw;
+}
+
+.position6 {
+    position: absolute;
+    left: 30vw;
+    top: -1vw;
+}
+
+#carrot_sprite {
+    background-image: url(../images/carrot.svg);
+    background-size: 100%;
+    width: 6.25vw;
+    height: 9.25vw;
+}
+
+.position7 {
+    position: absolute;
+    left: 50vw;
+    top: -1vw;
+}
+
+#heart_sprite {
+    background-image: url(../images/active_heart.svg);
+    background-size: 100%;
+    width: 6vw;
+    height: 6vw;
+}
+
+.position8 {
+    position: absolute;
+    left: 20vw;
+    top: -15vw;
+}
+
+#score_candy {
+    background-image: url(../images/score_candy.svg);
+    background-size: 100%;
+    width: 5.5vw;
+    height: 5.5vw;
+}
+
+.position9 {
+    position: absolute;
+    right: 5vw;
+    top: 5vw;
+}
+
+#score {
+    font-family: 'Catamaran';
+    color: dimgrey;
+    font-size: 4em;
+}
+
+.position10 {
+    position: absolute;
+    right: 1.3vw;
+    top: 4vw;
+}
+
+.goodHeart {
+    background-size: 100%;
+    width: 3vw;
+    height: 3vw;
+}
+
+.badHeart {
+    background-size: 100%;
+    width: 3vw;
+    height: 35vw;
+    filter: grayscale(100%);
+}
+
+#heart1 {
+    background-image: url(../images/active_heart.svg);
+    background-size: 100%;
+    width: 3vw;
+    height: 3vw;
+}
+
+.position11 {
+    position: absolute;
+    right: 7.6vw;
+    top: 1vw;
+}
+
+#heart2 {
+    background-image: url(../images/active_heart.svg);
+    background-size: 100%;
+    width: 3vw;
+    height: 3vw;
+}
+
+.position12 {
+    position: absolute;
+    right: 4.3vw;
+    top: 1vw;
+}
+
+#heart3 {
+    background-image: url(../images/active_heart.svg);
+    background-size: 100%;
+    width: 3vw;
+    height: 3vw;
+}
+
+.position13 {
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+}
+
+#time_board {
+    width: 4.2vw;
+    height: 15.4vw;
+}
+
+.position14 {
+    position: absolute;
+    right: 0.5vw;
+    top: 6vw;
+}
+
+#timebar_BG {
+    position: absolute;
+    background-image: url(../images/timebar_BG.svg);
+    background-size: 100%;
+    width: 4.2vw;
+    height: 15.4vw;
+}
+
+#timebar_FG {
+    position: absolute;
+    background-image: url(../images/timebar_FG.svg);
+    background-size: 100%;
+    width: 4.2vw;
+    height: 15.4vw;
+}
+
+#MG_container {
+    position: absolute;
+    background-size: 100%;
+    width: 4.2vw;
+    height: 15.4vw;
+    clip-path: polygon(-1px 50px, 73% 50px, 73% 120%, 0px 120%);
+}
+
+#timebar_MG {
+    position: absolute;
+    background-image: url(../images/timebar_MG.svg);
+    background-size: 100%;
+    width: 4.2vw;
+    height: 15.4vw;
+}
+
+/*other screens*/
+
+#title_screen_background {
+    background-image: url(../images/BG_1.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 80vw;
+    height: 45vw;
+    left: 0%;
+    top: 0%;
+}
+
+#settings {
+    background-image: url(../images/settings_1.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 80vw;
+    height: 45vw;
+    left: 0%;
+    top: 0%;
+}
+
+#title {
+    background-image: url(../images/title.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    left: 35%;
+    top: 6vw;
+}
+
+#instructions_screen_background {
+    background-image: url(../images/BG_1.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 80vw;
+    height: 45vw;
+    left: 0%;
+    top: 0%;
+}
+
+#instructions_table {
+    background-image: url(../images/table.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 40.8vw;
+    height: 20.4vw;
+    right: 18vw;
+    top: 6vw;
+}
+
+#game_over_screen_background {
+    background-image: url(../images/BG_1.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 80vw;
+    height: 45vw;
+    left: 0%;
+    top: 0%;
+}
+
+#game_over {
+    background-image: url(../images/gameover.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 30.62vw;
+    height: 25vw;
+    left: 25vw;
+    top: 6vw;
+}
+
+#level_complete_screen_background {
+    background-image: url(../images/BG_1.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 80vw;
+    height: 45vw;
+    left: 0%;
+    top: 0%;
+}
+
+#level_complete {
+    background-image: url(../images/levelcomplete.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 50vw;
+    height: 25vw;
+    left: 15VW;
+    top: 6vw;
+}
+
+/*buttons*/
+
+.title_music_button {
+    background-image: url(../images/music-on_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 5vw;
+    top: 1vw;
+}
+
+.title_musicoff_button {
+    background-image: url(../images/music-off_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 5vw;
+    top: 1vw;
+}
+
+#title_music_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 4.9vw;
+    top: 1.1vw;
+}
+
+.title_sound_button {
+    background-image: url(../images/sound-on_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 1vw;
+    top: 1vw;
+}
+
+.title_soundoff_button {
+    background-image: url(../images/sound-off_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 1vw;
+    top: 1vw;
+}
+
+#title_sound_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 0.9vw;
+    top: 1.1vw;
+}
+
+#pause_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 3.9vw;
+    bottom: 0.9vw;
+}
+
+.pause_button {
+    background-image: url(../images/pause_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 4vw;
+    bottom: 1vw;
+}
+
+.unpause_button {
+    background-image: url(../images/play_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 4vw;
+    bottom: 1vw;
+}
+
+#settings_button {
+    background-image: url(../images/settings_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 0.5vw;
+    bottom: 1vw;
+}
+
+#settings_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 0.4vw;
+    bottom: 0.9vw;
+}
+
+#play_button {
+    background-image: url(../images/play_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    left: 35.5vw;
+    bottom: 5vw;
+}
+
+#play_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    left: 35.6vw;
+    bottom: 4.9vw;
+}
+
+#instructions_button {
+    background-image: url(../images/info_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    right: 35.5vw;
+    bottom: 5vw;
+}
+
+#instructions_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    right: 35.4vw;
+    bottom: 4.9vw;
+}
+
+#button {
+    background-image: url(../images/play.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 15.6vw;
+    height: 3.5vw;
+    left: 33vw;
+    top: 24vw;
+}
+
+#button_shadow {
+    background-image: url(../images/play_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 15.6vw;
+    height: 3.5vw;
+    left: 33.1vw;
+    top: 24.1vw;
+}
+
+#GO_replay_button {
+    background-image: url(../images/replay_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    right: 35.5vw;
+    bottom: 5vw;
+}
+
+#GO_replay_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    right: 35.4vw;
+    bottom: 4.9vw;
+}
+
+#GO_home_button {
+    background-image: url(../images/restart_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    left: 35.5vw;
+    bottom: 5vw;
+}
+
+#GO_home_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    left: 35.6vw;
+    bottom: 4.9vw;
+}
+
+#LC_replay_button {
+    background-image: url(../images/replay_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    right: 35.5vw;
+    bottom: 5vw;
+}
+
+#LC_replay_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    right: 35.4vw;
+    bottom: 4.9vw;
+}
+
+#LC_home_button {
+    background-image: url(../images/restart_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    left: 35.5vw;
+    bottom: 5vw;
+}
+
+#LC_home_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    left: 35.6vw;
+    bottom: 4.9vw;
+}
+
+#instructions_close {
+    background-image: url(../images/close.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 18vw;
+    top: 6vw;
+}
+
+#instructions_close_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    right: 17.9vw;
+    top: 6.1vw;
+}
+
+.sound_button {
+    background-image: url(../images/sound-on_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    top: 16vw;
+    left: 33vw;
+}
+
+.soundoff_button {
+    background-image: url(../images/sound-off_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    top: 16vw;
+    left: 33vw;
+}
+
+#sound_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    top: 16.1vw;
+    left: 33.1vw;
+}
+
+.music_button {
+    background-image: url(../images/music-on_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    top: 16vw;
+    right: 33vw;
+}
+
+.musicoff_button {
+    background-image: url(../images/music-off_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    top: 16vw;
+    right: 33vw;
+}
+
+#music_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    top: 16.1vw;
+    right: 32.9vw;
+}
+
+#home_button {
+    background-image: url(../images/restart_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    top: 25vw;
+    left: 33vw;
+}
+
+#home_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    top: 25.1vw;
+    left: 33.1vw;
+}
+
+#replay_button {
+    background-image: url(../images/replay_btn.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    top: 25vw;
+    right: 33vw;
+}
+
+#replay_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    top: 25.1vw;
+    right: 32.9vw;
+}
+
+#close_button {
+    background-image: url(../images/close.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    top: 10vw;
+    right: 28vw;
+}
+
+#close_button_shadow {
+    background-image: url(../images/btn_shadow.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 3.16vw;
+    height: 3.16vw;
+    top: 10.1vw;
+    right: 27.9vw;
+}
+
+/*animations*/
+
+.fall1 {
+    animation: fall1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall1 {
+    from {
+        transform: translateY(-10vw);
+    }
+
+    to {
+        transform: translateY(60vw);
+    }
+}
+
+.fall2 {
+    animation: fall2;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall2 {
+    from {
+        transform: translateY(-10vw);
+    }
+
+    to {
+        transform: translateY(50vw);
+    }
+}
+
+.fall3 {
+    animation: fall3;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall3 {
+    from {
+        transform: translateY(-10vw);
+    }
+
+    to {
+        transform: translateY(50vw);
+    }
+}
+
+.fall4 {
+    animation: fall4;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall4 {
+    from {
+        transform: translateY(-10vw);
+    }
+
+    to {
+        transform: translateY(60vw);
+    }
+}
+
+.fall5 {
+    animation: fall5;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall5 {
+    from {
+        transform: translateY(-7vw);
+    }
+
+    to {
+        transform: translateY(55vw);
+    }
+}
+
+.fall6 {
+    animation: fall6;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall6 {
+    from {
+        transform: translateY(-8vw);
+    }
+
+    to {
+        transform: translateY(50vw);
+    }
+}
+
+.fall7 {
+    animation: fall7;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall7 {
+    from {
+        transform: translateY(-8vw);
+    }
+
+    to {
+        transform: translateY(60vw);
+    }
+}
+
+.fall8 {
+    animation: fall8;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall8 {
+    from {
+        transform: translateY(-8vw);
+    }
+
+    to {
+        transform: translateY(60vw);
+    }
+}
+
+@keyframes heavy {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(50vw);
+    }
+}
+
+.heavy {
+    animation: heavy;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+@keyframes move {
+    from {
+        filter: opacity(100%);
+        transform: scale(1);
+    }
+
+    to {
+        filter: opacity(0%);
+        transform: scale(0);
+    }
+}
+
+.move {
+    animation: move;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade {
+
+    from {
+        filter: opacity(100%);
+    }
+
+    to {
+        filter: opacity(0%);
+    }
+}
+
+.fade {
+    animation: fade;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+@keyframes click {
+    from {
+        transform: translate(0vw, 0vw);
+    }
+
+    to {
+        transform: translate(0.1vw, 0.1vw);
+    }
+}
+
+.click {
+    animation: click;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.timer {
+    animation-name: timer;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes timer {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10.4vw);
+    }
+}
+
+@keyframes title_appear {
+    from {
+        transform: scale(0.3);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.title_appear {
+    animation-name: title_appear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}

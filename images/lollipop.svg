@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="410" viewBox="0 0 310 410">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #999;
+      }
+
+      .cls-2 {
+        fill: #ffb8c1;
+      }
+
+      .cls-3 {
+        fill: #ffa9b8;
+      }
+    </style>
+  </defs>
+  <g id="items">
+    <g>
+      <rect class="cls-1" x="79.7" y="135.5" width="7.6" height="297.16" rx="2.5" transform="translate(167.95 0.28) rotate(32.95)"/>
+      <circle class="cls-2" cx="215.7" cy="92.13" r="92"/>
+      <rect class="cls-3" x="109.97" y="78.41" width="207.36" height="30" rx="10" transform="translate(64.91 -86.17) rotate(26.75)"/>
+    </g>
+  </g>
+</svg>

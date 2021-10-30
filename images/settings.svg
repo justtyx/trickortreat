@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="510" height="615" viewBox="0 0 510 615">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4d4d4d;
+      }
+
+      .cls-2 {
+        fill: gray;
+      }
+    </style>
+  </defs>
+  <g id="Backgrounds">
+    <g>
+      <rect class="cls-1" x="14.17" y="13.02" width="495.06" height="601.1" rx="93.82"/>
+      <rect class="cls-2" x="4.77" y="2.87" width="495.06" height="601.1" rx="93.82"/>
+    </g>
+  </g>
+</svg>

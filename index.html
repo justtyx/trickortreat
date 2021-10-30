@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trick or treat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="https://www.justtyx.lt">
+                    <img class="nav_logo" src="images/logo.svg">
+                </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="screen">
+            <div id="game" class="hidden">
+                <div id="game_background"></div>
+                <div id="game_sprites">
+                    <div id="characters" class="position"></div>
+                    <div id="candy_item_container">
+                        <div id="candy_item_sprite"></div>
+                    </div>
+                    <div id="extra_point_candy_container">
+                        <div id="extra_point_candy_sprite"></div>
+                    </div>
+                    <div id="heart_candy_container">
+                        <div id="heart_candy_sprite"></div>
+                    </div>
+                    <div id="lollipop_container">
+                        <div id="lollipop_sprite"></div>
+                    </div>
+                    <div id="apple_container">
+                        <div id="apple_sprite"></div>
+                    </div>
+                    <div id="lemon_container">
+                        <div id="lemon_sprite"></div>
+                    </div>
+                    <div id="carrot_container">
+                        <div id="carrot_sprite"></div>
+                    </div>
+                    <div id="heart_container">
+                        <div id="heart_sprite"></div>
+                    </div>
+                </div>
+                <div id="game_ui">
+                    <div id="score_board">
+                        <div id="score" class="position10"></div>
+                        <div id="score_candy" class="position9"></div>
+                    </div>
+                    <div id="health_board">
+                        <div id="heart1" class="position11"></div>
+                        <div id="heart2" class="position12"></div>
+                        <div id="heart3" class="position13"></div>
+                    </div>
+                    <div id="time_board" class="position14">
+                        <div id="timebar_BG" class="position14"></div>
+                        <div id="MG_container">
+                            <div id="timebar_MG" class="position14"></div>
+                        </div>
+                        <div id="timebar_FG" class="position14"></div>
+                    </div>
+                    <div id="buttons">
+                        <div id="pause_button_container">
+                            <div id="pause_button_shadow"></div>
+                            <div id="pause_button"></div>
+                        </div>
+                        <div id="settings_button_container">
+                            <div id="settings_button_shadow"></div>
+                            <div id="settings_button"></div>
+                        </div>
+                    </div>
+                    <div id="settings" class="hidden">
+                        <div id="sound_button_shadow"></div>
+                        <div id="sound_button"></div>
+                        <div id="music_button_shadow"></div>
+                        <div id="music_button"></div>
+                        <div id="home_button_shadow"></div>
+                        <div id="home_button"></div>
+                        <div id="replay_button_shadow"></div>
+                        <div id="replay_button"></div>
+                        <div id="close_button_shadow"></div>
+                        <div id="close_button"></div>
+                    </div>
+                    <audio id="candy_sound" src="sound/candy.mp3"></audio>
+                    <audio id="veggie_sound" src="sound/veggie.mp3"></audio>
+                    <audio id="heart_sound" src="sound/heart.mp3"></audio>
+
+                    <audio id="button_sound" src="sound/button.mp3"></audio>
+                </div>
+                <audio id="BG_music" src="sound/bensound-creepy.mp3"></audio>
+
+            </div>
+            <div id="title_screen" class="hidden">
+                <div id="title_screen_background"></div>
+                <div id="title"></div>
+                <div id="play_button_container">
+                    <div id="play_button_shadow"></div>
+                    <div id="play_button"></div>
+                </div>
+                <div id="instructions_button_container">
+                    <div id="instructions_button_shadow"></div>
+                    <div id="instructions_button"></div>
+                </div>
+                <div id="title_sound_button_container">
+                    <div id="title_sound_button_shadow"></div>
+                    <div id="title_sound_button"></div>
+                </div>
+                <div id="title_music_button_container">
+                    <div id="title_music_button_shadow"></div>
+                    <div id="title_music_button"></div>
+                </div>
+            </div>
+            <div id="instructions_screen" class="hidden">
+                <div id="instructions_screen_background"></div>
+                <div id="instructions_table"></div>
+                <div id="instructions_text" class="instructions_text">
+                    <p>Help trick or treating children collect candies within 30 seconds. And remember, you're not
+                        supposed to eat fruits on a Halloween night.</p>
+                    <p>Each fruit or vegetable clicked, takes away one life. You will get 1 point for each candy and 2
+                        points for polka-dotted candy.</p>
+                    <p>You lose a game when the time runs out and you don't have 25 points, or if you lose all your
+                        hearts.</p>
+                </div>
+                <div id="button_shadow"></div>
+                <div id="button"></div>
+                <div id="instructions_close_shadow"></div>
+                <div id="instructions_close"></div>
+            </div>
+            <div id="game_over_screen" class="hidden">
+                <div id="game_over_screen_background"></div>
+                <div id="game_over"></div>
+                <div id="GO_replay_button_container">
+                    <div id="GO_replay_button_shadow"></div>
+                    <div id="GO_replay_button"></div>
+                </div>
+                <div id="GO_home_button_container">
+                    <div id="GO_home_button_shadow"></div>
+                    <div id="GO_home_button"></div>
+                </div>
+                <audio id="game_over_sound" src="sound/Sad_Trombone-Joe_Lamb-665429450.mp3"></audio>
+            </div>
+            <div id="level_complete_screen" class="hidden">
+                <div id="level_complete_screen_background"></div>
+                <div id="level_complete"></div>
+                <div id="LC_replay_button_container">
+                    <div id="LC_replay_button_shadow"></div>
+                    <div id="LC_replay_button"></div>
+                </div>
+                <div id="LC_home_button_container">
+                    <div id="LC_home_button_shadow"></div>
+                    <div id="LC_home_button"></div>
+                    <audio id="level_complete_sound" src="sound/level-complete_mixdown.mp3"></audio>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <h1>Trick or treat</h1>
+            <p>This game is made by Justina Jemeljanovaitė.</p>
+            <p>Halloween isn't just about being scary, it's about having fun too!</p>
+            <p>Help two trick or treating children collect candies and avoid clicking on vegetables. You must collect at
+                least 25 points to win the game.</p>
+            <p>Credits for music: <a href="https://www.bensound.com/" target="_blank">www.bensound.com</a></p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; Justina Jemeljanovaite, 2020</p>
+        <a href="https://www.linkedin.com/in/jemeljanovaite/" target="_blank"><img src="images/IN.png"
+                alt="https://www.behance.com" class="icons"></a>
+        <a href="https://www.behance.net/justtyx" target="_blank"><img src="images/BE.png" alt="https://www.behance.com"
+                class="icons"></a>
+        <a href="https://www.instagram.com/justtyx" target="_blank"><img src="images/IG.svg"
+                alt="https://www.instagram.com/justtyx" class="icons"></a>
+        <a href="https://www.facebook.com/justina.jemeljanovaite" target="_blank"><img src="images/FB.svg"
+                alt="https://www.facebook.com" class="icons"></a>
+    </footer>
+    <script src="js/third.js"></script>
+</body>
+
+</html>

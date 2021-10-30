@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="190" viewBox="0 0 190 190">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+      }
+
+      .cls-2 {
+        fill: #e6e6e6;
+      }
+    </style>
+  </defs>
+  <g id="Backgrounds">
+    <circle class="cls-1" cx="90" cy="85" r="82.5"/>
+    <g>
+      <rect class="cls-2" x="80.36" y="43.93" width="18.8" height="84.14" rx="9.4" transform="translate(-34.52 88.66) rotate(-45)"/>
+      <rect class="cls-2" x="80.85" y="42.93" width="18.8" height="84.14" rx="9.4" transform="translate(86.54 -38.92) rotate(45)"/>
+    </g>
+  </g>
+</svg>

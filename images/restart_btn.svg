@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="190" viewBox="0 0 190 190">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+      }
+
+      .cls-2 {
+        fill: #ccc;
+      }
+    </style>
+  </defs>
+  <g id="Backgrounds">
+    <g>
+      <circle class="cls-1" cx="90" cy="85" r="82.5"/>
+      <path class="cls-2" d="M134.15,84.26,92.08,43.77a3,3,0,0,0-4.16,0L45.85,84.26a3,3,0,0,0,2.08,5.17h7.6v34.63a3,3,0,0,0,3,3h63.07a3,3,0,0,0,3-3V89.43h7.45A3,3,0,0,0,134.15,84.26Z"/>
+    </g>
+  </g>
+</svg>
